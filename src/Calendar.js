@@ -93,6 +93,7 @@ const Calendar = ({
   };
 
   const selectMonth = newMonthNumber => {
+    onChange();
     setMainState({
       ...mainState,
       activeDate: { ...activeDate, month: newMonthNumber },
